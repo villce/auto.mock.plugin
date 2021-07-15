@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <groupId>com.vilce</groupId>
+        <artifactId>auto-mock-maven-plugin</artifactId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>mock-plugin</artifactId>
+    <packaging>maven-plugin</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.maven.plugin-tools</groupId>
+            <artifactId>maven-plugin-annotations</artifactId>
+            <version>3.6.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.vilce</groupId>
+            <artifactId>mock-core</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+</project>
