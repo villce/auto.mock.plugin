@@ -78,6 +78,10 @@ public class MockClassInfoHandle {
             JavaClass superClass = javaField.getType().getSuperJavaClass();
             // 获取该类中的方法
             JavaClass fieldClass = CommonConstant.javaProjectBuilder.getClassByName(fullyQualifiedName);
+            if ("org.springframework.data.redis.core.StringRedisTemplate".equals(fieldClass.getName())) {
+                javaClassInfo.setStringRedis(true);
+                javaClassInfo.setRedisShortName(javaField.getName());
+            }
             List<JavaMethod> fieldMethodList = fieldClass.getMethods();
             for (JavaMethod javaMethod : fieldMethodList) {
                 JavaMethodModel javaMethodModel = getJavaMethodModel(javaMethod, javaField.getName(), javaField.getType()

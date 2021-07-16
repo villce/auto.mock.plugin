@@ -7,6 +7,7 @@ import com.esatmoney.mock.data.dto.*;
 import com.eastmoney.mock.core.handle.FullNameHandle;
 import com.eastmoney.mock.core.utils.StringUtil;
 import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
 import com.thoughtworks.qdox.model.JavaClass;
 import com.thoughtworks.qdox.model.JavaPackage;
 import com.eastmoney.mock.core.handle.MockClassInfoHandle;
@@ -53,6 +54,8 @@ public class BuildClassImpl {
         javaClassInfo.setModelNameLowerCamel(javaClassDTO.getModelNameLowerCamel());
         // 设置mock的信息
         List<JavaMockClassInfoDTO> javaMockClassInfoDTOList = MockClassInfoHandle.getMockClass(javaClass, javaClassInfo);
+        javaClassDTO.setStringRedis(javaClassInfo.getStringRedis());
+        javaClassDTO.setRedisShortName(javaClassInfo.getRedisShortName());
         // 需要引入的mock类
         javaClassDTO.setJavaMockClassInfoDTOList(javaMockClassInfoDTOList);
         // 设置方法、属性
@@ -60,32 +63,37 @@ public class BuildClassImpl {
         javaClassDTO.setJavaMethodDTOList(javaMethodDTOList);
         // 获取导入的包 - 处理导入的包
         Map<String, Set<String>> implementsJavaPackageMap = javaClassInfo.getImplementsJavaPackageMap();
-//        List<JavaImplementsDTO> javaImplementsDTOList = FullNameHandle.handleImplements(implementsJavaPackageMap);
-        List<JavaImplementsDTO> javaImplementsDTOList = Lists.newLinkedList();
-        javaClass.getSource().getImports().forEach(importStr -> {
-            JavaImplementsDTO javaImplementsDTO = new JavaImplementsDTO();
-            javaImplementsDTO.setType(importStr);
-            javaImplementsDTOList.add(javaImplementsDTO);
+        // todo 返参包导入
+        javaMethodDTOList.forEach(javaMethodDTO -> {
+            if (implementsJavaPackageMap.containsKey(javaMethodDTO.getReturnType())) {
+                Set<String> stringSet = implementsJavaPackageMap.get(javaMethodDTO.getReturnType());
+                stringSet.add(javaMethodDTO.getReturnFullyType());
+            } else {
+                Set<String> stringSet = Sets.newHashSet();
+                stringSet.add(javaMethodDTO.getReturnFullyType());
+                implementsJavaPackageMap.put(javaMethodDTO.getReturnType(), stringSet);
+            }
         });
+        List<JavaImplementsDTO> javaImplementsDTOList = FullNameHandle.handleImplements(implementsJavaPackageMap);
         javaClassDTO.setJavaImplementsDTOList(javaImplementsDTOList);
         // 处理测试类的参数，需要导入的包
         // 遍历方法
-//        for (JavaMethodDTO javaMethodDTO : javaMethodDTOList) {
-//            // 遍历参数
-//            List<JavaParameterDTO> javaParameterDTOList = javaMethodDTO.getJavaParameterDTOList();
-//            for (JavaParameterDTO javaParameterDTO : javaParameterDTOList) {
-//                String type = javaParameterDTO.getType();
-//                if (implementsJavaPackageMap.containsKey(type)) {
-//                    // 包含该类型
-//                    Set<String> types = implementsJavaPackageMap.get(type);
-//                    // 有多个简称，使用全名
-//                    if (types.size() > 1) {
-//                        // 设置全名
-//                        javaParameterDTO.setType(javaParameterDTO.getFullyType());
-//                    }
-//                }
-//            }
-//        }
+        for (JavaMethodDTO javaMethodDTO : javaMethodDTOList) {
+            // 遍历参数
+            List<JavaParameterDTO> javaParameterDTOList = javaMethodDTO.getJavaParameterDTOList();
+            for (JavaParameterDTO javaParameterDTO : javaParameterDTOList) {
+                String type = javaParameterDTO.getType();
+                if (implementsJavaPackageMap.containsKey(type)) {
+                    // 包含该类型
+                    Set<String> types = implementsJavaPackageMap.get(type);
+                    // 有多个简称，使用全名
+                    if (types.size() > 1) {
+                        // 设置全名
+                        javaParameterDTO.setType(javaParameterDTO.getFullyType());
+                    }
+                }
+            }
+        }
         // 设置包名
         JavaPackage pkg = javaClass.getPackage();
         javaClassDTO.setPackageName(pkg.getName());

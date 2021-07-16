@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dacc0937-04af-4b6e-ae6c-196f9036c752" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-core/src/main/java/com/eastmoney/mock/core/constant/InitConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-core/src/main/java/com/eastmoney/mock/core/constant/InitConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-core/src/main/java/com/eastmoney/mock/core/handle/FullNameHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-core/src/main/java/com/eastmoney/mock/core/handle/FullNameHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-core/src/main/java/com/eastmoney/mock/core/handle/MockClassInfoHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-core/src/main/java/com/eastmoney/mock/core/handle/MockClassInfoHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-core/src/main/java/com/eastmoney/mock/core/impl/BuildClassImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-core/src/main/java/com/eastmoney/mock/core/impl/BuildClassImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-data/src/main/java/com/esatmoney/mock/data/dto/JavaClassDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data/src/main/java/com/esatmoney/mock/data/dto/JavaClassDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-data/src/main/java/com/esatmoney/mock/data/info/JavaClassInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data/src/main/java/com/esatmoney/mock/data/info/JavaClassInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-plugin/src/main/resources/mock-test.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/mock-plugin/src/main/resources/mock-test.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-test-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mock-test-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-test-demo/src/main/java/mock/test/demo/service/DemoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-test-demo/src/main/java/mock/test/demo/service/DemoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-test-demo/src/main/java/mock/test/demo/service/DemoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-test-demo/src/main/java/mock/test/demo/service/DemoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-test-demo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mock-test-demo/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -9,14 +33,238 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectId" id="1vNT4RjnQHwy5KYYYJsYuBZ4fg1" />
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
+    <configuration name="DemoServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mock-test-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mock.test.demo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mock.test.demo.service" />
+      <option name="MAIN_CLASS_NAME" value="mock.test.demo.service.DemoServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoServiceImplTest.demo1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mock-test-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mock.test.demo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mock.test.demo.service" />
+      <option name="MAIN_CLASS_NAME" value="mock.test.demo.service.DemoServiceImplTest" />
+      <option name="METHOD_NAME" value="demo1Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoServiceImplTest.demo2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mock-test-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mock.test.demo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mock.test.demo.service" />
+      <option name="MAIN_CLASS_NAME" value="mock.test.demo.service.DemoServiceImplTest" />
+      <option name="METHOD_NAME" value="demo2Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="auto-mock" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mock:auto-mock" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/mock-test-demo" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mock-test-demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mock.test.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Maven.auto-mock" />
+      <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="JUnit.DemoServiceImplTest.demo2Test" />
+      <item itemvalue="JUnit.DemoServiceImplTest" />
+      <item itemvalue="JUnit.DemoServiceImplTest.demo1Test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DemoServiceImplTest.demo2Test" />
+        <item itemvalue="JUnit.DemoServiceImplTest.demo1Test" />
+        <item itemvalue="JUnit.DemoServiceImplTest" />
+        <item itemvalue="Maven.auto-mock" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dacc0937-04af-4b6e-ae6c-196f9036c752" name="Default Changelist" comment="" />
+      <created>1626401354137</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626401354137</updated>
+      <workItem from="1626401355827" duration="15235000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="499" y="136" key="#Unnamed" timestamp="1626352825417">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state x="499" y="136" key="#Unnamed/0.25.1792.1010/-1920.25.1920.1055@0.25.1792.1010" timestamp="1626352825417" />
+    <state x="412" y="203" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1626413415056">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state x="412" y="203" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1792.1010/-1920.25.1920.1055@0.25.1792.1010" timestamp="1626413415056" />
+    <state x="760" y="222" key="#com.intellij.ide.util.MemberChooser" timestamp="1626424863990">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state x="760" y="222" key="#com.intellij.ide.util.MemberChooser/0.25.1792.1010/-1920.25.1920.1055@0.25.1792.1010" timestamp="1626424863990" />
+    <state width="546" height="466" key="DebuggerActiveHint" timestamp="1626425179647">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="546" height="466" key="DebuggerActiveHint/0.25.1792.1010/-1920.25.1920.1055@0.25.1792.1010" timestamp="1626425179647" />
+    <state width="1647" height="313" key="GridCell.Tab.0.bottom" timestamp="1626426311417">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="1647" height="313" key="GridCell.Tab.0.bottom/0.25.1792.1010/-1920.25.1920.1055@0.25.1792.1010" timestamp="1626426311417" />
+    <state width="1647" height="313" key="GridCell.Tab.0.center" timestamp="1626426311417">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="1647" height="313" key="GridCell.Tab.0.center/0.25.1792.1010/-1920.25.1920.1055@0.25.1792.1010" timestamp="1626426311417" />
+    <state width="1647" height="313" key="GridCell.Tab.0.left" timestamp="1626426311417">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="1647" height="313" key="GridCell.Tab.0.left/0.25.1792.1010/-1920.25.1920.1055@0.25.1792.1010" timestamp="1626426311417" />
+    <state width="1647" height="313" key="GridCell.Tab.0.right" timestamp="1626426311417">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="1647" height="313" key="GridCell.Tab.0.right/0.25.1792.1010/-1920.25.1920.1055@0.25.1792.1010" timestamp="1626426311417" />
+    <state width="1647" height="313" key="GridCell.Tab.1.bottom" timestamp="1626426311278">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="1647" height="313" key="GridCell.Tab.1.bottom/0.25.1792.1010/-1920.25.1920.1055@0.25.1792.1010" timestamp="1626426311278" />
+    <state width="1647" height="313" key="GridCell.Tab.1.center" timestamp="1626426311277">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="1647" height="313" key="GridCell.Tab.1.center/0.25.1792.1010/-1920.25.1920.1055@0.25.1792.1010" timestamp="1626426311277" />
+    <state width="1647" height="313" key="GridCell.Tab.1.left" timestamp="1626426311277">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="1647" height="313" key="GridCell.Tab.1.left/0.25.1792.1010/-1920.25.1920.1055@0.25.1792.1010" timestamp="1626426311277" />
+    <state width="1647" height="313" key="GridCell.Tab.1.right" timestamp="1626426311278">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="1647" height="313" key="GridCell.Tab.1.right/0.25.1792.1010/-1920.25.1920.1055@0.25.1792.1010" timestamp="1626426311278" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mock-core/src/main/java/com/eastmoney/mock/core/impl/BuildMockClassMethodImpl.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mock-core/src/main/java/com/eastmoney/mock/core/impl/BuildClassMethodParameterImpl.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mock-core/src/main/java/com/eastmoney/mock/core/impl/BuildClassMethodParameterImpl.java</url>
+          <line>131</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mock-core/src/main/java/com/eastmoney/mock/core/impl/BuildClassMethodParameterImpl.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mock-core/src/main/java/com/eastmoney/mock/core/impl/BuildClassMethodImpl.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mock-core/src/main/java/com/eastmoney/mock/core/impl/BuildClassImpl.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mock-core/src/main/java/com/eastmoney/mock/core/handle/MockClassInfoHandle.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mock-core/src/main/java/com/eastmoney/mock/core/handle/MockClassInfoHandle.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mock-core/src/main/java/com/eastmoney/mock/core/handle/MockClassInfoHandle.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

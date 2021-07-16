@@ -17,5 +17,5 @@ import java.util.Map;
 public interface DemoService {
     void demo1(String str);
 
-    Demo demo2(Map<String, Date> map, int[] ints, HttpServletResponse response);
+    Demo demo2(Map<String, Date> map, int[] ints);
 }

@@ -1,9 +1,7 @@
-/*
-* primo-generator-mock-test
-*/
 package ${javaClassDTO.packageName};
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -12,11 +10,14 @@ import org.mockito.junit.MockitoJUnitRunner;
 <#list javaClassDTO.javaImplementsDTOList as implements>
 import ${implements.type};
 </#list>
+<#if javaClassDTO.stringRedis>
+import org.springframework.data.redis.core.ValueOperations;
+</#if>
 
 import static org.mockito.Mockito.*;
 
 /**
-* @Description: description
+* @Description: auto-mock ${javaClassDTO.modelNameUpperCamel}
 * @ProjectName: ${javaClassDTO.project!''}
 * @Author: ${javaClassDTO.author!''}
 * @Date: ${javaClassDTO.date!''}
@@ -30,6 +31,18 @@ public class ${javaClassDTO.modelNameUpperCamelTestClass} {
     @Mock
     private ${mockClass.type} ${mockClass.name};
 </#list>
+<#if javaClassDTO.stringRedis>
+    @Mock
+    private ValueOperations valueOperations;
+</#if>
+
+    @Before
+    public void beforeTest() {
+        <#if javaClassDTO.stringRedis>
+        when(${javaClassDTO.redisShortName}.opsForValue()).thenReturn(valueOperations);
+        when(valueOperations.get(anyString())).thenReturn(null);
+        </#if>
+    }
 
 <#--遍历方法-->
 <#list javaClassDTO.javaMethodDTOList as method>

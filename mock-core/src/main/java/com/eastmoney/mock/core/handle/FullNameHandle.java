@@ -83,7 +83,7 @@ public class FullNameHandle {
         // 全称限定名称
         for (String key : implementsJavaPackageMap.keySet()) {
             Set<String> types = implementsJavaPackageMap.get(key);
-//            if (types.size() == 1) {
+            if (types.size() == 1) {
                 // 获取导入
                 for (String type : types) {
                     // 只有一个 - 排除基础类型，lang包下的类型
@@ -94,7 +94,7 @@ public class FullNameHandle {
                     javaImplementsDTO.setType(type);
                     javaImplementsDTOList.add(javaImplementsDTO);
                 }
-//            }
+            }
         }
         return javaImplementsDTOList;
     }

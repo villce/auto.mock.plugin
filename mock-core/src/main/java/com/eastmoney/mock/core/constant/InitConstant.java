@@ -111,8 +111,8 @@ public class InitConstant {
     }
 
     private static void initSpecialValue() {
-        SPECIAL_VALUE.put("javax.servlet.http.HttpServletResponse", "RequestUtil.getResponse()");
-        SPECIAL_VALUE.put("javax.servlet.http.HttpServletRequest", "RequestUtil.getRequest()");
+        SPECIAL_VALUE.put("javax.servlet.http.HttpServletResponse", "com.eastmoney.emis.utils.common.utils.RequestUtil.getResponse()");
+        SPECIAL_VALUE.put("javax.servlet.http.HttpServletRequest", "com.eastmoney.emis.utils.common.utils.RequestUtil.getRequest()");
         SPECIAL_VALUE.put("int[]", "new int[10]");
     }
 
@@ -135,7 +135,6 @@ public class InitConstant {
         EXCLUDE_IMPORT_TYPE.add("java.lang.StringBuffer");
         EXCLUDE_IMPORT_TYPE.add("java.lang.StringBuilder");
         EXCLUDE_IMPORT_TYPE.add("java.lang.Void");
-        EXCLUDE_IMPORT_TYPE.add("int[]");
 
         EXCLUDE_IMPORT_TYPE.add("Integer");
         EXCLUDE_IMPORT_TYPE.add("Class");
@@ -163,6 +162,7 @@ public class InitConstant {
         EXCLUDE_IMPORT_TYPE.add("B");
         EXCLUDE_IMPORT_TYPE.add("M");
         EXCLUDE_IMPORT_TYPE.add("F");
+        EXCLUDE_IMPORT_TYPE.add("void");
     }
 
     private static void initMapping() {

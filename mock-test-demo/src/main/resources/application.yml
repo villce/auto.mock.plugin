@@ -1,2 +1,21 @@
 server:
-  port: 8008
+  port: 8088
+test: vilce
+spring:
+  redis:
+    database: 6
+    sentinel:
+      master: mymaster
+      nodes: 42.192.39.179:6379
+    password: zhege
+    timeout: 3000
+    jedis:
+      pool:
+        max-active: 8
+        min-idle: 0
+        max-idle: 8
+        max-wait: -1ms
+    # 设置缓存过期时间
+    cache:
+      timeout:
+        normal: 300

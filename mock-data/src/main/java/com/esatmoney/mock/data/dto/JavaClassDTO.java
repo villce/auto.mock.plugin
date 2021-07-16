@@ -61,6 +61,16 @@ public class JavaClassDTO {
      * 需要引入的mcok类
      */
     private List<JavaMockClassInfoDTO> javaMockClassInfoDTOList = new ArrayList<>();
+    /**
+     * 是否存在StringRedisTemplate进行缓存
+     * @return
+     */
+    private boolean stringRedis;
+    /**
+     * StringRedisTemplate简称
+     * @return
+     */
+    private String redisShortName;
 
     public String getModelNameUpperCamel() {
         return modelNameUpperCamel;
@@ -148,5 +158,21 @@ public class JavaClassDTO {
 
     public void setJavaMockClassInfoDTOList(List<JavaMockClassInfoDTO> javaMockClassInfoDTOList) {
         this.javaMockClassInfoDTOList = javaMockClassInfoDTOList;
+    }
+
+    public boolean getStringRedis() {
+        return stringRedis;
+    }
+
+    public void setStringRedis(boolean stringRedis) {
+        this.stringRedis = stringRedis;
+    }
+
+    public String getRedisShortName() {
+        return redisShortName;
+    }
+
+    public void setRedisShortName(String redisShortName) {
+        this.redisShortName = redisShortName;
     }
 }

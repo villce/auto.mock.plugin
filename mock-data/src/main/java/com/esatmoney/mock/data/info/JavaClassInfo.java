@@ -44,6 +44,15 @@ public class JavaClassInfo {
      */
     private String modelNameLowerCamel;
     /**
+     * 是否存在StringRedisTemplate缓存
+     */
+    private boolean stringRedis;
+    /**
+     * StringRedisTemplate简称
+     * @return
+     */
+    private String redisShortName;
+    /**
      * 类信息存储
      * key - 类的全限定名称
      * value - 类信息
@@ -164,6 +173,22 @@ public class JavaClassInfo {
 
     public void setModelNameLowerCamel(String modelNameLowerCamel) {
         this.modelNameLowerCamel = modelNameLowerCamel;
+    }
+
+    public boolean getStringRedis() {
+        return stringRedis;
+    }
+
+    public void setStringRedis(boolean stringRedis) {
+        this.stringRedis = stringRedis;
+    }
+
+    public String getRedisShortName() {
+        return redisShortName;
+    }
+
+    public void setRedisShortName(String redisShortName) {
+        this.redisShortName = redisShortName;
     }
 
     public Map<String, JavaClassModel> getJavaClassModelMap() {
